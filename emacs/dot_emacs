@@ -1,0 +1,57 @@
+(add-to-list 'load-path "~/.emacs.d/")
+(add-to-list 'load-path "~/.emacs.d/plugins/")
+(add-to-list 'load-path "~/.emacs.d/plugins/color-theme")
+(add-to-list 'load-path "~/.emacs.d/plugins/yasnippet")
+(add-to-list 'load-path "~/.emacs.d/plugins/git-emacs")
+(add-to-list 'load-path "~/.emacs.d/autocomplete/")
+(add-to-list 'load-path "~/.emacs.d/plugins/org-mode/lisp")
+(add-to-list 'load-path "~/.emacs.d/modes")
+(add-to-list 'load-path "~/.emacs.d/modes/django-mode/")
+(add-to-list 'load-path "~/.emacs.d/custom-mode/")
+
+(setq py-load-pymacs-p 'nil)
+
+(load "custom-html.el")
+
+;; yassnippet
+(load "custom-yasnippet.el")
+
+; python
+(load "custom-python.el")
+
+; Autopair
+(load "custom-autopair.el")
+
+; Markdown
+(load "custom-markdown.el")
+
+; Dired-mode
+(load "custom-dired-mode.el")
+
+; Setting for theme, basic behavior
+(load "custom-interface.el")
+
+; (load "custom-clojure.el")
+;; org-mode
+;;(load "custom-org-mode.el")
+
+;; autocomplete
+(load "custom-coffee.el")
+
+(require 'auto-complete-config)
+(add-to-list 'ac-dictionary-directories "~/.emacs.d/plugins/ac-dict")
+(ac-config-default)
+
+(put 'upcase-region 'disabled nil)
+(put 'downcase-region 'disabled nil)
+
+;;(speedbar 1)
+
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(tool-bar-mode nil))
+
+(desktop-save-mode 1)

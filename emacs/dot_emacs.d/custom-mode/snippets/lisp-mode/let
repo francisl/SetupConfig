@@ -1,0 +1,4 @@
+(defun ${1:func-name} (${2:param})
+       (let ${3:variable-name})
+       $4
+       )

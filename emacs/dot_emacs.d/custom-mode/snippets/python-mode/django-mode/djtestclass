@@ -1,0 +1,6 @@
+class ${1:ClassName}(TestCase): 
+    def setUp(self):
+        pass
+    
+    def tearDown(self):
+    	pass

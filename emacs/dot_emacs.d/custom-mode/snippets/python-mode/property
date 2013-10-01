@@ -1,0 +1,8 @@
+
+def get_${1:$()}(self):
+    ${2:pass}
+
+def set_${1:$()}(self):
+    ${3:pass}
+
+${1:property_name} = property(get_${1:$(yas/text)}, set_${1:$(yas/text)} )

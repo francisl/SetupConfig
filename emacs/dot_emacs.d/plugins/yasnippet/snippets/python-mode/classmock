@@ -1,0 +1,4 @@
+class Mock${1:MockName}(${2:object}):
+      def __init__(self):
+          ${3:pass}
+

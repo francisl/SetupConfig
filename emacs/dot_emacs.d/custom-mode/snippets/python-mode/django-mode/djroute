@@ -1,0 +1,1 @@
+(r'^${1:route_name}/?', ${2:function_name}, {}, '${2:$()}'),
